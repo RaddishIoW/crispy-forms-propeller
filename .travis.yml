@@ -1,0 +1,41 @@
+# We do not use sudo
+sudo: false
+
+# Python versions for matrix
+dist: xenial   # required for Python >= 3.7
+language: python
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7"
+
+# Django versions for matrix
+env:
+  - DJANGO_VERSION='>=1.8,<2.0'
+  - DJANGO_VERSION='>=2.0,<2.1'
+  - DJANGO_VERSION='>=2.1,<2.2'
+  - DJANGO_VERSION='>=2.2,<3.0'
+
+# Command to install dependencies, e.g. pip install -r requirements.txt
+install:
+  - pip install Django$DJANGO_VERSION
+  - pip install coveralls
+  - pip install python-coveralls
+
+# Command to run tests, e.g. python setup.py test
+script:
+  - pip install -r requirements.txt
+  - coverage run --source=django2_propeller manage.py test
+  - python manage.py check
+
+matrix:
+  exclude:
+    - python: "3.4"
+      env: DJANGO_VERSION='>=2.1,<2.2'
+    - python: "3.4"
+      env: DJANGO_VERSION='>=2.2,<3.0'
+
+# Report to coveralls
+after_success:
+  - COVERALLS_REPO_TOKEN=XX0ABVUpD21T2NYbBSjEs3ERR3jqR6g9l coveralls
