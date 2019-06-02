@@ -1,0 +1,392 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ve",
+				"vehicle"
+			],
+			[
+				"milag",
+				"milage_records"
+			],
+			[
+				"Ca",
+				"CASCADE"
+			],
+			[
+				"Milage",
+				"MilageRecordForm\tclass"
+			],
+			[
+				"Vehi",
+				"VehicleForm\tclass"
+			],
+			[
+				"Mil",
+				"MilageRecordForm\tclass"
+			],
+			[
+				"V",
+				"VehicleForm\tclass"
+			],
+			[
+				"Veh",
+				"VehicleTable\tclass"
+			],
+			[
+				"rever",
+				"reverse_lazy\tmodule"
+			],
+			[
+				"context",
+				"context\tstatement"
+			],
+			[
+				"account",
+				"account_name"
+			],
+			[
+				"job",
+				"joboccurrence"
+			],
+			[
+				"Job",
+				"jobrecord"
+			],
+			[
+				"Form",
+				"FormHelper\tmodule"
+			],
+			[
+				"def",
+				"def\tFunction"
+			],
+			[
+				"d",
+				"def\tFunction"
+			],
+			[
+				"is",
+				"is_controller\tfunction"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"JobS",
+				"JobStatusAdmin\tclass"
+			],
+			[
+				"list",
+				"list_display"
+			],
+			[
+				"For",
+				"ForeignKey"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"p",
+				"path\tmodule"
+			],
+			[
+				"as",
+				"as_view"
+			],
+			[
+				"auth",
+				"auth_views\tmodule"
+			],
+			[
+				"requ",
+				"RequestConfig\tmodule"
+			],
+			[
+				"bo",
+				"BooleanField"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Development/crispy-forms-propeller"
+	],
+	"file_history":
+	[
+		"/D/Development/crispy-forms-propeller/setup.py",
+		"/D/Development/Hayl/Django/Vehicles/models.py",
+		"/D/Development/Hayl/Django/Vehicles/forms.py",
+		"/D/Development/Hayl/Django/Vehicles/views.py",
+		"/D/Development/Hayl/Django/Vehicles/tables.py",
+		"/D/Development/Hayl/Django/Vehicles/urls.py",
+		"/D/Development/Hayl/Django/Vehicles/templates/Vehicles/vehicle_confirm_delete.html",
+		"/D/Development/Hayl/Django/Vehicles/templates/Vehicles/vehicle_detail.html",
+		"/D/Development/Hayl/Django/Hayl/settings.py",
+		"/D/Development/Hayl/Django/Vehicles/templates/Vehicles/vehicle_form.html",
+		"/D/Development/Hayl/Django/Hayl/templates/formset.html",
+		"/D/Development/Hayl/Django/Hayl/templates/navbar.html",
+		"/D/Development/Hayl/Django/Vehicles/templates/Vehicles/vehicle_list.html",
+		"/D/Development/Hayl/Django/Hayl/urls.py",
+		"/D/Development/Hayl/Django/Drivers/urls.py",
+		"/D/Development/Hayl/Django/Drivers/views.py",
+		"/D/Development/Hayl/Django/JobRecord/urls.py",
+		"/D/Development/Hayl/Django/JobRecord/models.py",
+		"/D/Development/Hayl/Django/Drivers/models.py",
+		"/D/Development/Hayl/Django/Accounts/admin.py",
+		"/D/Development/Hayl/Django/JobRecord/migrations/0001_initial.py",
+		"/D/Development/Hayl/Django/JobRecord/admin.py",
+		"/D/Development/Hayl/Django/db.sqlite3",
+		"/D/Development/Hayl/Django/JobRecord/utils.py",
+		"/D/Development/Hayl/Django/Accounts/models.py",
+		"/D/Development/Hayl/Django/Hayl/views.py",
+		"/D/Development/django-location-field/example/README.md",
+		"/D/Development/Hayl/Django/requirements.in",
+		"/C/Users/adam/Downloads/virtualenvwrapper-powershell-master/virtualenvwrapper-powershell-master/README.md",
+		"/D/Development/Hayl/Django/.ebextensions/django.config",
+		"/D/Development/Hayl/Django/Hayl/static/hayl/css/theme.css",
+		"/D/Development/Hayl/Django/Hayl/templates/base.html",
+		"/D/Development/Hayl/Django/users/models.py",
+		"/D/Development/Hayl/Django/Hayl/templates/driver_dash.html",
+		"/D/Development/Hayl/Django/Hayl/templates/cont_dash.html",
+		"/D/Development/Hayl/Django/users/templates/registration/login.html",
+		"/D/Development/Hayl/Django/Hayl/templates/index.html",
+		"/D/Development/Hayl/Django/users/forms.py",
+		"/D/Development/Hayl/Django/manage.py",
+		"/D/Development/Hayl/Django/users/admin.py",
+		"/C/Users/adam/Downloads/spatialite_gui-1.7.1/spatialite_gui-1.7.1/README",
+		"/D/Development/Hayl/Django/users/tests.py",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/User/Python (Django).sublime-settings",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/Python (Django).sublime-settings",
+		"/D/Development/pmd-bootstrap-starter-templates/login/index.html",
+		"/D/Development/pmd-bootstrap-starter-templates/carousel/index.html",
+		"/D/Development/pmd-bootstrap-starter-templates/album/index.html",
+		"/D/Development/pmd-bootstrap-starter-templates/album/css/theme.css",
+		"/D/Development/Hayl/Django/Hayl/templates/bootstrap.html",
+		"/D/Development/Hayl/Django/JobRecord/forms.py",
+		"/D/Development/Hayl/Django/JobRecord/views.py",
+		"/D/Development/Hayl/.gitignore",
+		"/D/Development/Hayl/Django/Hayl/navbars.py",
+		"/D/Development/Hayl/pmd-bootstrap-starter-templates/login/index.html",
+		"/D/Development/django2-propeller/setup.py",
+		"/D/Development/django2-propeller/django2_propeller/templates/propeller/propeller.html",
+		"/D/Development/Hayl/pmd-bootstrap-starter-templates/login/css/theme.css",
+		"/D/Development/django-propeller/django_propeller/propeller.py",
+		"/D/Development/django-propeller/django_propeller/tests.py",
+		"/D/Development/django-propeller/CONTRIBUTING.rst",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/job_list.html",
+		"/D/Development/Hayl/Django/JobRecord/tables.py",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/daily_view.html",
+		"/D/Development/Hayl/Hayl.sublime-project",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/job_detail.html",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/job_form_part.html",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/monthly_view.html",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/occurrence_detail.html",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/yearly_view.html",
+		"/D/Development/Hayl/Django/JobRecord/templates/swingtime/add_job.html",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Python Imports Sorter/Default (Windows).sublime-keymap",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Python Imports Sorter/Default.sublime-settings",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/TrailingSpaces/trailing_spaces.sublime-settings",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/HypnotoadSVN/menus/Default Side Bar.sublime-menu",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/HypnotoadSVN/HypnotoadSVN.sublime-settings",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/User/HypnotoadSVN.sublime-settings",
+		"/D/Development/Hayl/Django/JobRecord/conf.py",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/D/Development/Hayl/Django/setup.cfg"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"book",
+			"pickup_location",
+			"destination_location",
+			"pickup_location",
+			"id=\"\"",
+			"exampleInputAmount",
+			"dropdown",
+			"swingtime-add-job",
+			"swingtime-daily-view",
+			"jobrecord-jobs",
+			"swingtime"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"vehicle",
+			"pickup_address",
+			"destination_address",
+			"pickup_address",
+			"JobRecord:jobrecord-add-job",
+			"JobRecord:jobrecord-daily-view",
+			"jobrecord"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "crispy-forms-propeller.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 313.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
