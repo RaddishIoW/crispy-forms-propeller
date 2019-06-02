@@ -116,10 +116,11 @@
 	"buffers":
 	[
 		{
-			"file": "crispy_forms_propeller/templates/propeller/inputs.html",
+			"file": ".travis.yml",
 			"settings":
 			{
-				"buffer_size": 420,
+				"buffer_size": 944,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -169,15 +170,12 @@
 	"expanded_folders":
 	[
 		"/D/Development/crispy-forms-propeller",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/layout",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/layout",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller.egg-info"
+		"/D/Development/crispy-forms-propeller/tests"
 	],
 	"file_history":
 	[
+		"/D/Development/crispy-forms-propeller/README.md",
+		"/D/Development/crispy-forms-propeller/requirements.in",
 		"/D/Development/crispy-forms-propeller/MANIFEST.in",
 		"/D/Development/crispy-forms-foundation/MANIFEST.in",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/__init__.py",
@@ -354,26 +352,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "crispy_forms_propeller/templates/propeller/inputs.html",
-					"semi_transient": true,
+					"file": ".travis.yml",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 420,
+						"buffer_size": 944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								513,
+								513
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
