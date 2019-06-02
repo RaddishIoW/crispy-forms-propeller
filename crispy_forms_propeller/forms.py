@@ -17,16 +17,16 @@ from crispy_forms.helper import FormHelper
 from .layout import Submit, HTML, InlineSwitchField
 
 
-class FoundationFormMixin(object):
+class PropellerFormMixin(object):
     """
     Mixin to implement a layout helper that will automatically build a form
     layout.
 
-    Generally, you will prefer to use ``FoundationForm`` or
-    ``FoundationModelForm`` instead.
+    Generally, you will prefer to use ``PropellerForm`` or
+    ``PropellerModelForm`` instead.
 
     If you still want to directly use this mixin you'll just have to execute
-    ``FoundationFormMixin.init_helper()`` in your form init.
+    ``PropellerFormMixin.init_helper()`` in your form init.
 
     **Attributes**
 
@@ -59,7 +59,7 @@ class FoundationFormMixin(object):
     layout = None
     error_title = _("Errors :")
     form_id = None
-    classes = "foundation-form"
+    classes = ""
     action = ""
     method = "post"
     attrs = {}
@@ -143,9 +143,9 @@ class FoundationFormMixin(object):
             self.helper.layout.fields[position[0]] = instead
 
 
-class FoundationForm(FoundationFormMixin, forms.Form):
+class PropellerForm(PropellerFormMixin, forms.Form):
     """
-    A **Django form** that inherit from ``FoundationFormMixin`` to
+    A **Django form** that inherit from ``PropellerFormMixin`` to
     automatically build a form layout
 
     Example:
@@ -153,9 +153,9 @@ class FoundationForm(FoundationFormMixin, forms.Form):
     .. sourcecode:: python
 
         from django import forms
-        from crispy_forms_foundation.forms import FoundationForm
+        from crispy_forms_propeller.forms import PropellerForm
 
-        class YourForm(FoundationForm):
+        class YourForm(PropellerForm):
             title = "Testing"
             action = 'test'
             layout = Layout(Fieldset("Section", "my_field", "my_field_2"))
@@ -167,22 +167,22 @@ class FoundationForm(FoundationFormMixin, forms.Form):
 
     """
     def __init__(self, *args, **kwargs):
-        super(FoundationForm, self).__init__(*args, **kwargs)
+        super(PropellerForm, self).__init__(*args, **kwargs)
         self.init_helper()
 
 
-class FoundationModelForm(FoundationFormMixin, forms.ModelForm):
+class PropellerModelForm(PropellerFormMixin, forms.ModelForm):
     """
-    A **Django Model form** that inherit from ``FoundationFormMixin`` to
+    A **Django Model form** that inherit from ``PropellerFormMixin`` to
     automatically build a form layout
 
     Example:
 
     .. sourcecode:: python
 
-        from crispy_forms_foundation.forms import FoundationModelForm
+        from crispy_forms_propeller.forms import PropellerModelForm
 
-        class YourForm(FoundationModelForm):
+        class YourForm(PropellerModelForm):
             title = "Testing"
             action = 'test'
             layout = Layout(Fieldset("Section", "my_field", "my_field_2"))
@@ -195,5 +195,5 @@ class FoundationModelForm(FoundationFormMixin, forms.ModelForm):
 
     """
     def __init__(self, *args, **kwargs):
-        super(FoundationModelForm, self).__init__(*args, **kwargs)
+        super(PropellerModelForm, self).__init__(*args, **kwargs)
         self.init_helper()

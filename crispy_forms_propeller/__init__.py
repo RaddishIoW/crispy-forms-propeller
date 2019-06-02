@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Django application to add 'django-crispy-forms' layout objects for 'Foundation for sites'"""  # noqa: E501
+"""Django application to add 'django-crispy-forms' layout objects for 'Propeller.in'"""  # noqa: E501
 from __future__ import absolute_import, unicode_literals
 
 import os
@@ -22,4 +22,4 @@ def _extract_version(package_name):
     return _conf["metadata"]["version"]
 
 
-__version__ = _extract_version("crispy_forms_foundation")
+__version__ = _extract_version("crispy_forms_propeller")

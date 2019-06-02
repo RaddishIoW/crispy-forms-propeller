@@ -1,0 +1,13 @@
+{% if inputs %}
+    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+        {% if label_class %}
+            <div class="control-label {{ label_class }}"></div>
+        {% endif %}
+
+        <div class="form-control {{ field_class }}">
+            {% for input in inputs %}
+                {% include "propeller/layout/baseinput.html" %}
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,17 @@
+include MANIFEST.in
+include LICENCE
+include README.md
+
+recursive-include crispy_forms_propeller/templates *
+recursive-include crispy_forms_propeller/static *
+recursive-include crispy_forms_propeller/locale *
+recursive-include crispy_forms_propeller/test_fixtures *
+
+recursive-exclude data *
+recursive-exclude docs *
+recursive-exclude sandbox *
+recursive-exclude tests *
+recursive-exclude * .cache
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
