@@ -1,2 +1,2 @@
-Django>=1.8,<1.10
-crispy-forms-foundation
+Django>=1.11.19,<1.10
+crispy-forms-propeller
