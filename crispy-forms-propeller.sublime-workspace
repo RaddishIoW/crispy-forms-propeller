@@ -115,15 +115,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": ".travis.yml",
-			"settings":
-			{
-				"buffer_size": 944,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -169,11 +160,15 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Development/crispy-forms-propeller",
-		"/D/Development/crispy-forms-propeller/tests"
+		"/Users/raddish/Development/crispy-forms-propeller",
+		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller",
+		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templates",
+		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller"
 	],
 	"file_history":
 	[
+		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/inputs.html",
+		"/Users/raddish/Development/crispy-forms-propeller/.travis.yml",
 		"/D/Development/crispy-forms-propeller/README.md",
 		"/D/Development/crispy-forms-propeller/requirements.in",
 		"/D/Development/crispy-forms-propeller/MANIFEST.in",
@@ -292,7 +287,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -347,43 +342,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": ".travis.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 944,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								513,
-								513
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -424,7 +390,7 @@
 	"project": "crispy-forms-propeller.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
