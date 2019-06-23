@@ -1,10 +1,10 @@
 {% if inputs %}
     <div class="form-group">
         {% if label_class %}
-            <div class="control-label {{ label_class }}"></div>
+            <div class="aab controls {{ label_class }}"></div>
         {% endif %}
 
-        <div class="form-control {{ field_class }}">
+        <div class="controls {{ field_class }}">
             {% for input in inputs %}
                 {% include "propeller/layout/baseinput.html" %}
             {% endfor %}

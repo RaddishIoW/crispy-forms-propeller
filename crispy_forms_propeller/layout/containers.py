@@ -3,17 +3,7 @@ Form containers
 ===============
 
 .. _django-crispy-forms: https://github.com/maraujop/django-crispy-forms
-.. _Foundation: http://github.com/zurb/foundation
-.. _crispy-forms-foundation-demo: https://github.com/sveetch/crispy-forms-foundation-demo
-.. _Abide: http://foundation.zurb.com/docs/components/abide.html
-
-References
-    * `Foundation 5 fieldset <http://foundation.zurb.com/sites/docs/v/5.5.3/components/forms.html>`_;
-    * `Foundation 5 Accordion <http://foundation.zurb.com/sites/docs/v/5.5.3/components/accordion.html>`_;
-    * `Foundation 5 Tabs <http://foundation.zurb.com/sites/docs/v/5.5.3/components/tabs.html>`_;
-    * `Foundation 6 fieldset <http://foundation.zurb.com/sites/docs/forms.html#fieldset-styles>`_;
-    * `Foundation 6 Accordion <http://foundation.zurb.com/sites/docs/accordion.html>`_;
-    * `Foundation 6 Tabs <http://foundation.zurb.com/sites/docs/tabs.html>`_;
+.. _Propeller: https://propeller.in
 
 """  # noqa: E501
 from random import randint
@@ -28,7 +18,7 @@ from crispy_forms.compatibility import text_type
 
 __all__ = [
     'Fieldset', 'Container', 'ContainerHolder', 'TabHolder',
-    'VerticalTabHolder', 'TabItem', 'AccordionHolder', 'AccordionItem',
+    'TabItem', 'AccordionHolder', 'AccordionItem',
 ]
 
 
@@ -54,33 +44,6 @@ class Fieldset(crispy_forms_layout.Fieldset):
         )
     """
     template = "%s/layout/fieldset.html"
-
-
-class Container(crispy_forms_bootstrap.Container):
-    """
-    Overrides original Container element to get the "active" classname from
-    Class attribute ``active_css_class`` so it's compatible with Foundation
-    5 and 6.
-    """
-    css_class = ""
-    active_css_class = "active"
-
-    def get_active_css_class(self, template_pack):
-        # Foundation-6 addon only which use unusual class name
-        if template_pack == 'foundation-6':
-            return "is-active"
-        return self.active_css_class
-
-    def render(self, form, form_style, context, template_pack=TEMPLATE_PACK,
-               **kwargs):
-        active_classname = self.get_active_css_class(template_pack)
-        if self.active:
-            if active_classname and active_classname not in self.css_class:
-                self.css_class += ' ' + active_classname
-        else:
-            self.css_class = self.css_class.replace(active_classname, '')
-        return super(Container, self).render(form, form_style, context,
-                                             template_pack)
 
 
 class ContainerHolder(crispy_forms_bootstrap.ContainerHolder):
@@ -142,13 +105,6 @@ class TabHolder(crispy_forms_bootstrap.TabHolder):
 
         template = self.get_template_name(template_pack)
         return render_to_string(template, context.flatten())
-
-
-class VerticalTabHolder(TabHolder):
-    """
-    VerticalTabHolder appends vertical class to TabHolder container
-    """
-    css_class = 'vertical'
 
 
 class TabItem(Container):
