@@ -5,15 +5,21 @@ have correct Propeller error class on input element.
 TODO: Changes stand on ``CRISPY_CLASS_CONVERTERS`` usage so it may be included
       in ``django-crispy-forms``, this needs a Pull request.
 """
-from django import template
+from django import template, forms
 from django.conf import settings
 
 from crispy_forms.templatetags.crispy_forms_field import (is_checkbox,
                                                           is_file,
+                                                          is_multivalue,
                                                           pairwise,
                                                           CrispyFieldNode)
 
 register = template.Library()
+
+
+@register.filter
+def is_textfield(field):
+    return isinstance(field.field.widget, forms.TextInput)
 
 
 class CrispyPropellerFieldNode(CrispyFieldNode):
@@ -45,9 +51,9 @@ class CrispyPropellerFieldNode(CrispyFieldNode):
             attrs = [attrs] * len(widgets)
 
         converters = {
-            'textinput': 'textinput textInput',
+            'textinput': 'form-control',
             'fileinput': 'fileinput fileUpload',
-            'passwordinput': 'textinput textInput',
+            'passwordinput': 'form-control',
             'inputelement': 'form-control',
             'errorcondition': 'form-control-danger',
         }
@@ -63,27 +69,28 @@ class CrispyPropellerFieldNode(CrispyFieldNode):
             else:
                 css_class = class_name
 
-            if not is_checkbox(field) and not is_file(field):
-                if converters.get('inputelement'):
-                    css_class += ' ' + converters.get('inputelement')
-                if converters.get('errorcondition') and field.errors:
-                    css_class += ' ' + converters.get('errorcondition')
+            if ( not is_checkbox(field)
+                and not is_file(field)
+                and not is_multivalue(field)
+            ):
+                css_class += ' form-control'
+                if field.errors:
+                    css_class += ' form-control-danger'
 
             widget.attrs['class'] = css_class
 
             # HTML5 required attribute
-            if (html5_required and field.field.required
-               and 'required' not in widget.attrs):
+            if html5_required and field.field.required and 'required' not in widget.attrs:
                 if field.field.widget.__class__.__name__ is not 'RadioSelect':
                     widget.attrs['required'] = 'required'
 
             for attribute_name, attribute in attr.items():
-                attribute_name = template.Variable(attribute_name).resolve(context)  # noqa: E501
+                attribute_name = template.Variable(attribute_name).resolve(context)
 
                 if attribute_name in widget.attrs:
-                    widget.attrs[attribute_name] += " " + template.Variable(attribute).resolve(context)  # noqa: E501
+                    widget.attrs[attribute_name] += " " + template.Variable(attribute).resolve(context)
                 else:
-                    widget.attrs[attribute_name] = template.Variable(attribute).resolve(context)  # noqa: E501
+                    widget.attrs[attribute_name] = template.Variable(attribute).resolve(context)
 
         return field
 

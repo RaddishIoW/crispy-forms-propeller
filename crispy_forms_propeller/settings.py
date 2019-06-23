@@ -17,7 +17,6 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = (
     'propeller'
 )
 
-
 # Default layout pack
 CRISPY_TEMPLATE_PACK = 'propeller'
 
