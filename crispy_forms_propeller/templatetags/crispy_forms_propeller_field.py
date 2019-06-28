@@ -21,9 +21,15 @@ register = template.Library()
 def is_textfield(field):
     return isinstance(field.field.widget, forms.TextInput)
 
+
 @register.filter
 def is_textarea(field):
     return isinstance(field.field.widget, forms.TextArea)
+
+
+@register.filter
+def is_email(field):
+    return isinstance(field.field.widget, forms.EmailInput)
 
 
 class CrispyPropellerFieldNode(CrispyFieldNode):
