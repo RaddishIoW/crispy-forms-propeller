@@ -32,6 +32,11 @@ def is_email(field):
     return isinstance(field.field.widget, forms.EmailInput)
 
 
+@register.filter
+def is_numberfield(field):
+    return isinstance(field.field.widget, forms.NumberInput)
+
+
 class CrispyPropellerFieldNode(CrispyFieldNode):
     def __init__(self, field, attrs):
         self.field = field
@@ -79,10 +84,10 @@ class CrispyPropellerFieldNode(CrispyFieldNode):
             else:
                 css_class = class_name
 
-            if ( not is_checkbox(field)
+            if (not is_checkbox(field)
                 and not is_file(field)
                 and not is_multivalue(field)
-            ):
+                ):
                 css_class += ' form-control'
                 if field.errors:
                     css_class += ' form-control-danger'
@@ -95,12 +100,15 @@ class CrispyPropellerFieldNode(CrispyFieldNode):
                     widget.attrs['required'] = 'required'
 
             for attribute_name, attribute in attr.items():
-                attribute_name = template.Variable(attribute_name).resolve(context)
+                attribute_name = template.Variable(
+                    attribute_name).resolve(context)
 
                 if attribute_name in widget.attrs:
-                    widget.attrs[attribute_name] += " " + template.Variable(attribute).resolve(context)
+                    widget.attrs[attribute_name] += " " + \
+                        template.Variable(attribute).resolve(context)
                 else:
-                    widget.attrs[attribute_name] = template.Variable(attribute).resolve(context)
+                    widget.attrs[attribute_name] = template.Variable(
+                        attribute).resolve(context)
 
         return field
 
