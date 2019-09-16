@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"Acc",
+				"AccordionGroup"
+			],
+			[
+				"Tab",
+				"TabHolder"
+			],
+			[
+				"Cont",
+				"ContainerHolder"
+			],
+			[
+				"In",
+				"InlineFieldUneditableField"
+			],
+			[
+				"Inl",
+				"InlineRadios"
+			],
+			[
+				"Inline",
+				"InlineCheckboxes"
+			],
+			[
+				"Form",
+				"FormActions"
+			],
+			[
+				"Pre",
+				"PrependedText"
+			],
+			[
+				"Prep",
+				"PrependedAppendedText"
+			],
+			[
 				"ve",
 				"vehicle"
 			],
@@ -54,10 +90,6 @@
 			[
 				"Job",
 				"jobrecord"
-			],
-			[
-				"Form",
-				"FormHelper\tmodule"
 			],
 			[
 				"def",
@@ -115,24 +147,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "crispy_forms_propeller/templates/propeller/field.html",
-			"settings":
-			{
-				"buffer_size": 2479,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "crispy_forms_propeller/__init__.py",
-			"settings":
-			{
-				"buffer_size": 830,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -178,31 +192,32 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/raddish/Development/crispy-forms-propeller",
-		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller",
-		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templatetags"
+		"/D/Development/crispy-forms-propeller",
+		"/D/Development/crispy-forms-propeller/crispy_forms_propeller",
+		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/layout"
 	],
 	"file_history":
 	[
-		"/Users/raddish/Development/crispy-forms-propeller/setup.cfg",
-		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templatetags/crispy_forms_propeller_field.py",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templatetags/crispy_forms_propeller_field.py",
-		"/D/Development/crispy-forms-propeller/requirements.in",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/__init__.py",
 		"/D/Development/crispy-forms-propeller/setup.cfg",
+		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/__init__.py",
+		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/layout/__init__.py",
+		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/forms.py",
+		"/D/Development/crispy-forms-propeller/requirements.txt",
+		"/D/Development/django-crispy-forms/crispy_forms/bootstrap.py",
+		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templatetags/crispy_forms_propeller_field.py",
+		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/field.html",
+		"/D/Development/django-crispy-forms/crispy_forms/templatetags/crispy_forms_field.py",
+		"/D/Development/django-crispy-forms/crispy_forms/templatetags/crispy_forms_tags.py",
+		"/D/Development/django-crispy-forms/crispy_forms/templatetags/crispy_forms_filters.py",
+		"/D/Development/crispy-forms-propeller/requirements.in",
 		"/D/Development/crispy-forms-propeller/README.md",
 		"/D/Development/crispy-forms-propeller/docs/conf.py",
-		"/D/Development/crispy-forms-propeller/requirements.txt",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/field.html",
 		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
 		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/layout/containers.py",
-		"/D/Development/django-crispy-forms/crispy_forms/templatetags/crispy_forms_field.py",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/settings.py",
-		"/D/Development/django-crispy-forms/crispy_forms/templatetags/crispy_forms_tags.py",
 		"/D/Development/crispy-forms-foundation/crispy_forms_foundation/templatetags/crispy_forms_foundation_field.py",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/whole_uni_form.html",
-		"/D/Development/django-crispy-forms/crispy_forms/templatetags/crispy_forms_filters.py",
 		"/D/Development/crispy-forms-propeller/build/lib/crispy_forms_propeller/templatetags/crispy_forms_propeller_field.py",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/whole_uni_formset.html",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/uni_formset.html",
@@ -221,7 +236,6 @@
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/layout/radioselect_inline.html",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/layout/uneditable_input.html",
 		"/D/Development/crispy-forms-propeller/docs/changelog.rst",
-		"/D/Development/django-crispy-forms/crispy_forms/bootstrap.py",
 		"/D/Development/django-crispy-forms/crispy_forms/templatetags/crispy_forms_utils.py",
 		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller/inputs.html",
 		"/Users/raddish/Development/crispy-forms-propeller/.travis.yml",
@@ -229,7 +243,6 @@
 		"/D/Development/crispy-forms-foundation/MANIFEST.in",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller.egg-info/SOURCES.txt",
 		"/D/Development/crispy-forms-foundation/crispy_forms_foundation/__init__.py",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/forms.py",
 		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/layout/base.py",
 		"/D/Development/crispy-forms-foundation/crispy_forms_foundation/layout/base.py",
 		"/D/Development/crispy-forms-propeller/docs/requirements.txt",
@@ -311,7 +324,8 @@
 		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/HypnotoadSVN/HypnotoadSVN.sublime-settings",
 		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/User/HypnotoadSVN.sublime-settings",
 		"/D/Development/Hayl/Django/JobRecord/conf.py",
-		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/HTML (Django).sublime-settings"
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/adam/AppData/Roaming/Sublime Text 3/Packages/User/Python.sublime-settings"
 	],
 	"find":
 	{
@@ -330,6 +344,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"help-block",
 			"foundation",
 			"is_checkbox",
 			"bootstrap3",
@@ -374,73 +389,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "crispy_forms_propeller/templates/propeller/field.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2479,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								601,
-								601
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "crispy_forms_propeller/__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 830,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								828,
-								828
-							]
-						],
-						"settings":
-						{
-							"SL.64.region_keys":
-							[
-								"SL.flake8.Highlights.|ef84a93f510d6adfa9575ee7848d84d2d93a163e411de0084cf111c658577159|region.yellowish markup.warning.sublime_linter|32",
-								"sublime_linter.protected_regions",
-								"SL.flake8.Gutter.|region.yellowish markup.warning.sublime_linter|dot"
-							],
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

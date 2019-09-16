@@ -10,14 +10,13 @@ from __future__ import absolute_import
 from .base import (PrependedAppendedText, AppendedText, PrependedText, FormActions,
                    InlineCheckboxes, InlineRadios, FieldWithButtons, StrictButton, Container,
                    ContainerHolder, Tab, TabHolder, AccordionGroup,
-                   Accordion, Alert, InlineFieldUneditableField)
+                   Accordion, Alert)
 
 
 __all__ = [
     'PrependedAppendedText', 'AppendedText', 'PrependedText',
 
     'FormActions', 'InlineCheckboxes', 'InlineRadios',
-    'InlineFieldUneditableField',
 
     'FieldWithButtons', 'StrictButton',
 

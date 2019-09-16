@@ -24,4 +24,4 @@
 
 # __version__ = _extract_version("crispy_forms_propeller")
 
-__version__ = "0.0.2a9"
+__version__ = "0.0.2a10"
