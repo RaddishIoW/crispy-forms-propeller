@@ -13,8 +13,7 @@ except ImportError:
     from django.core.urlresolvers import reverse, NoReverseMatch
 
 from crispy_forms.helper import FormHelper
-
-from .layout import Submit, HTML, InlineSwitchField
+from crispy_forms import layout as crispy_forms_layout
 
 
 class PropellerFormMixin(object):
@@ -80,8 +79,8 @@ class PropellerFormMixin(object):
                     and not ((isinstance(field, FileField) or
                               isinstance(field, ImageField))
                              and field_value):
-                        field.widget.attrs["required"] = ""
-                        field.abide_msg = _("This field is required.")
+                    field.widget.attrs["required"] = ""
+                    field.abide_msg = _("This field is required.")
 
         if not self.layout:
             # Start with an empty layout
@@ -99,7 +98,7 @@ class PropellerFormMixin(object):
             self.helper.form_action = self.action
 
         if self.title:
-            html = HTML(self.title_templatestring.format(self.title))
+            html = crispy_forms_layout.HTML(self.title_templatestring.format(self.title))
             self.helper.layout.insert(0, html)
 
         if self.form_id is not None:
@@ -110,24 +109,13 @@ class PropellerFormMixin(object):
         self.helper.form_error_title = self.error_title
         self.helper.attrs = self.attrs
 
-        if self.switches:
-            # Get a list of all fields with their location within the layout
-            layout_field_names = self.helper.layout.get_field_names()
-            # Transform checkbox fields to switches element
-            for pointer in layout_field_names:
-                if isinstance(self.fields[pointer[1]].widget,
-                              forms.CheckboxInput):
-                    field = InlineSwitchField(pointer[1],
-                                              switch_class="inline")
-                    self.replace_layout_object(pointer[0], field)
-
         if self.submit:
-            if isinstance(self.submit, Submit):
+            if isinstance(self.submit, crispy_forms_layout.Submit):
                 self.helper.add_input(self.submit)
             elif isinstance(self.submit, str):
-                self.helper.add_input(Submit('submit', self.submit))
+                self.helper.add_input(crispy_forms_layout.Submit('submit', self.submit))
             else:
-                self.helper.add_input(Submit('submit', _("Submit")))
+                self.helper.add_input(crispy_forms_layout.Submit('submit', _("Submit")))
 
     def replace_layout_object(self, position, instead):
         previous_layout_object = None
@@ -166,6 +154,7 @@ class PropellerForm(PropellerFormMixin, forms.Form):
             slug = forms.CharField(label='Slug', required=False)
 
     """
+
     def __init__(self, *args, **kwargs):
         super(PropellerForm, self).__init__(*args, **kwargs)
         self.init_helper()
@@ -194,6 +183,7 @@ class PropellerModelForm(PropellerFormMixin, forms.ModelForm):
                 fields = ['my_field', 'my_field_2', 'my_field_3']
 
     """
+
     def __init__(self, *args, **kwargs):
         super(PropellerModelForm, self).__init__(*args, **kwargs)
         self.init_helper()
