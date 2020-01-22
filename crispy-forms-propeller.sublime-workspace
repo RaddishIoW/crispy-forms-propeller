@@ -147,6 +147,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "crispy_forms_propeller/templates/propeller/field.html",
+			"settings":
+			{
+				"buffer_size": 2479,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -192,9 +200,10 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Development/crispy-forms-propeller",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller",
-		"/D/Development/crispy-forms-propeller/crispy_forms_propeller/layout"
+		"/Users/raddish/Development/crispy-forms-propeller",
+		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller",
+		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templates",
+		"/Users/raddish/Development/crispy-forms-propeller/crispy_forms_propeller/templates/propeller"
 	],
 	"file_history":
 	[
@@ -389,8 +398,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "crispy_forms_propeller/templates/propeller/field.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
