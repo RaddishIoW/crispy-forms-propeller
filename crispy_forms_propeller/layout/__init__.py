@@ -7,21 +7,37 @@ and implements Foundation components.
 """
 from __future__ import absolute_import
 
-from .base import (PrependedAppendedText, AppendedText, PrependedText, FormActions,
-                   InlineCheckboxes, InlineRadios, FieldWithButtons, StrictButton, Container,
-                   ContainerHolder, Tab, TabHolder, AccordionGroup,
-                   Accordion, Alert)
+from .base import (
+    PrependedAppendedText,
+    AppendedText,
+    PrependedText,
+    FormActions,
+    InlineCheckboxes,
+    InlineRadios,
+    Container,
+    ContainerHolder,
+    Tab,
+    TabHolder,
+    AccordionGroup,
+    Accordion,
+    Alert,
+)
 
 
 __all__ = [
-    'PrependedAppendedText', 'AppendedText', 'PrependedText',
-
-    'FormActions', 'InlineCheckboxes', 'InlineRadios',
-
-    'FieldWithButtons', 'StrictButton',
-
-    'Container', 'ContainerHolder', 'Tab', 'TabHolder',
-    'Accordion', 'AccordionGroup',
-
-    'Alert'
+    "PrependedAppendedText",
+    "AppendedText",
+    "PrependedText",
+    "FormActions",
+    "InlineCheckboxes",
+    "InlineRadios",
+    "FieldWithButtons",
+    "StrictButton",
+    "Container",
+    "ContainerHolder",
+    "Tab",
+    "TabHolder",
+    "Accordion",
+    "AccordionGroup",
+    "Alert",
 ]
