@@ -31,8 +31,8 @@ category = "main"
 description = "Best way to have Django DRY forms"
 name = "django-crispy-forms"
 optional = false
-python-versions = "*"
-version = "1.9.0"
+python-versions = ">=3.5"
+version = "1.9.1"
 
 [[package]]
 category = "dev"
@@ -76,8 +76,8 @@ django = [
     {file = "Django-3.0.5.tar.gz", hash = "sha256:d4666c2edefa38c5ede0ec1655424c56dc47ceb04b6d8d62a7eac09db89545c1"},
 ]
 django-crispy-forms = [
-    {file = "django-crispy-forms-1.9.0.tar.gz", hash = "sha256:67e73ac863d3159500029fbbcdcb788f287a3fd357becebc1a0b51f73896dce3"},
-    {file = "django_crispy_forms-1.9.0-py2.py3-none-any.whl", hash = "sha256:50032184708ce351e3c9f0008ac35d659d9d5973fa2db218066f2e0a76eb41d9"},
+    {file = "django-crispy-forms-1.9.1.tar.gz", hash = "sha256:fbe9c2c9698b6590afe37940cb08194d1e722015f6bc5bee83f679362406ea30"},
+    {file = "django_crispy_forms-1.9.1-py2.py3-none-any.whl", hash = "sha256:ad943285508f0ed0e271d00399b9399c22b8795a4f969029bce0fd29522a8e2d"},
 ]
 django-debug-toolbar = [
     {file = "django-debug-toolbar-2.2.tar.gz", hash = "sha256:eabbefe89881bbe4ca7c980ff102e3c35c8e8ad6eb725041f538988f2f39a943"},
