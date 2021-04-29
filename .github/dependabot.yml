@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: django-crispy-forms
+    versions:
+    - 1.10.0
+    - 1.11.0
+    - 1.11.1
+  - dependency-name: django-debug-toolbar
+    versions:
+    - "3.2"
+  - dependency-name: django
+    versions:
+    - 3.0.7
